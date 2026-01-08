@@ -1,0 +1,220 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    padding: 40px 20px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ===== FONTS ===== */
+
+/* HEADINGS: Aptos (or Arial if Aptos not available) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* BODY TEXT: Times New Roman */
+p, span, li, .text-content {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* ===== FIXED BAR LINES ===== */
+
+/* 1. SIMPLE MAIN SEPARATOR LINE */
+.main-bar {
+    height: 3px;
+    background-color: #000000;
+    border: none;
+    width: 100%;
+    margin: 30px 0 50px 0;
+    display: block;
+}
+
+/* 2. SIMPLE FOOTER SEPARATOR LINE */
+.footer-bar {
+    height: 3px;
+    background-color: #000000;
+    border: none;
+    width: 100%;
+    margin: 60px 0 30px 0;
+    display: block;
+}
+
+/* Regular HR tag style */
+hr:not(.main-bar):not(.footer-bar) {
+    height: 1px;
+    background-color: #000000;
+    border: none;
+    width: 80%;
+    margin: 40px auto;
+}
+
+/* ===== HEADER STYLES ===== */
+header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* MAIN HEADING - Divyansh Seth */
+h1 {
+    font-size: 3.6rem;
+    color: #000000;
+    margin-bottom: 1px;
+}
+
+/* PORTFOLIO SUBTITLE - Blue text, Times New Roman */
+.subtitle {
+    font-size: 1.2rem;
+    color: #0000ff;
+    margin-bottom: 20px;
+}
+
+/* ===== SECTION STYLES ===== */
+section {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+/* SECTION HEADINGS */
+h2 {
+    font-size: 2.4rem;
+    color: #000000;
+    margin: 20px 0;
+}
+
+/* ===== EDUCATION SECTION ===== */
+.edu-item {
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.degree {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* ===== SKILLS SECTION ===== */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill-tag {
+    padding: 2px 2px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: #000000;
+}
+
+/* ===== SOCIAL LINKS ===== */
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-link {
+    padding: 2px 2px;
+    border: 1px solid #000000;
+    color: #0000ff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-style: italic;
+    border-radius: 2px;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+/* ===== PARAGRAPH TEXT ===== */
+p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 1.2rem;
+    color: #0000ff;
+    margin-bottom: 10px;
+}
+
+.footer-note {
+    font-size: 1rem;
+    color: #0000ff;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 800px) {
+    body {
+        padding: 20px 15px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-link {
+        width: 200px;
+    }
+    
+    /* Keep bar lines simple on mobile too */
+    .main-bar, .footer-bar {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
